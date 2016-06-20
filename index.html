@@ -17,95 +17,12 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
   </head>
   <body ng-controller="hotelsController">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-<!--
-    <div class="container">
-          <h1>HolidayPirates Test</h1>
-          
-          <center><a href="javascript:void(0)" id="load-hotels" class="btn-grey">Load Hotels</a></center>
-            <div id="showData"></div>
-            
-          <div class="hotels">
-              <div class="hotel clearfix">
-                  <div class="hotel-image">
-                      <img src="images/img.jpg" alt="">
-                  </div>
-                  <div class="hotel-description">
-                      <div class="hotel-stars"></div>
-                      <h2>Hotel Name</h2>
-                      <h3>City - Country</h3>
-                      <p>
-                          Hotel description
-                      </p>
-                      <a href="#" class="btn-grey">Show Reviews</a>
-                      <div class="hotel-price">
-                          123 &euro;
-                          <span class="date">
-                              01.04.2016 - 01.05.2016
-                          </span>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="hotel clearfix">
-                  <div class="hotel-image">
-                      <img src="images/img.jpg" alt="">
-                  </div>
-                  <div class="hotel-description">
-                      <div class="hotel-stars"></div>
-                      <h2>Hotel Name</h2>
-                      <h3>City - Country</h3>
-                      <p>
-                          Hotel description
-                      </p>
-                      <a href="#" class="btn-grey">Show Reviews</a>
-                      <div class="hotel-price">
-                          123 &euro;
-                          <span class="date">
-                              01.04.2016 - 01.05.2016
-                          </span>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="hotel clearfix">
-                  <div class="hotel-image">
-                      <img src="images/img.jpg" alt="">
-                  </div>
-                  <div class="hotel-description">
-                      <div class="hotel-stars"></div>
-                      <h2>Hotel Name</h2>
-                      <h3>City - Country</h3>
-                      <p>
-                          Hotel description
-                      </p>
-                      <a href="#" class="btn-grey">Show Reviews</a>
-                      <div class="hotel-price">
-                          123 &euro;
-                          <span class="date">
-                              01.04.2016 - 01.05.2016
-                          </span>
-                      </div>
-                  </div>
-              </div>
-          </div>   
-          
-                        
-     </div>
--->
-     
-<!--     This is with angular-->
-     
-     
      <h1>HolidayPirates Test</h1>
      <center><a href="javascript:void(0)" ng-click="getHotels()" class="btn-grey">Load Hotels</a></center>
      <div class="container-fluid">
@@ -156,20 +73,10 @@
           
      </div>
     
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/angular/angular.js"></script>
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
