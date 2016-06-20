@@ -4,4 +4,4 @@ It was done in Angular.
 
 Didn't finished whole test. This is just a first version.
 
-You can see demo  <a href="http://jovanpoplasen.com/blog/hoteltest/">here</a>
+You can see demo  <a href="http://jovanpoplasen.com/blog/hoteltest/" target="_blank">here</a>
