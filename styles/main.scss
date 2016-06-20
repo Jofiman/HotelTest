@@ -1,0 +1,159 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,latin-ext);
+// endbower
+
+a{
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+    }
+}
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+.btn-grey {
+	background: #e5e5e5;
+    width: 320px;
+    text-align: center;
+    height: 50px;
+    line-height: 47px;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+    color: #323232;
+    font-size: 26px;
+    display: inline-block;
+    border: 1px solid #979797;
+    &:hover {
+        color: #323232;
+        background: darken(#e5e5e5, 10%);
+    }
+}
+.hotels{
+    .hotel{
+        min-height: 482px;
+        width: 100%;
+        margin: 115px auto 0 auto;
+        border: 1px solid #979797;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 48px;
+        max-width: 1626px;
+        .hotel-image {
+	        width: 638px;
+            border-right: 1px solid #979797;
+            float: left;
+            background: #e5e5e5;
+            height: 480px;
+            img {
+                height: 480px;
+            }
+        }
+        .hotel-description {
+	        max-width: 985px;
+            float: left;
+            padding: 0 35px;
+            background: #f6f6f6;
+            position: relative;
+            height: 480px;
+            width: 100%;
+            .hotel-stars {
+	            position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            h2 {
+                font-size: 42px;
+                font-weight: 600;
+                color: #000;
+                margin: 35px 0 20px 0;
+            }
+            h3 {
+                font-size: 24px;
+                font-weight: 300;
+                margin: 0 0 50px 0;
+            }
+            p{
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 50px;
+                height: 78px;
+                overflow: hidden;
+            }
+            .hotel-price {
+	            float: right;
+                font-size: 60px;
+                color: #323232;
+                text-align: right;
+                .date {
+                    display: block;
+                    font-size: 24px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .hotel-review {
+            width: 100%;
+            background: #bbbbbb;
+             padding:0 55px;
+             .review {
+                 .review-box {
+	                border-bottom: 1px solid #ababab;
+                     padding:55px 0;
+                }
+                 .review-mark {
+                     width: 140px;
+                     float: left;
+                     
+                     
+                     .mark {
+                         display: block;
+                         width: 80px;
+                         height: 80px;
+                         -webkit-border-radius: 50%;
+                         -moz-border-radius: 50%x;
+                         border-radius: 50%;
+                         background: #e5e5e5;
+                         color: #323232;
+                         text-align: center;
+                         font-size: 36px;
+                         padding-top: 15px;
+                         font-weight: bold;
+                     }
+                 }
+                 .review-description {
+                     width: calc(100% - 140px);
+                     float: left;
+                     h3 {
+                        margin-top: -10px;
+                        font-weight: 600;
+                     }
+                     p {
+                            margin-top: 20px;
+                            font-size: 20px;
+                            font-weight: 300;
+                     }
+                 }
+             }
+        } 
+        
+    }
+   
+}
+.clear {
+    clear: both;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+}
