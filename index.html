@@ -23,7 +23,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-     <h1>HolidayPirates Test</h1>
+    <h1>HolidayPirates Test</h1>
      <center><a href="javascript:void(0)" ng-click="getHotels()" class="btn-grey">Load Hotels</a></center>
      <div class="container-fluid">
          <div class="hotels" ng-cloak>
@@ -40,7 +40,7 @@
                       <p>
                           {{item.description}}
                       </p>
-                      <a class="btn-grey" href="javascript:void(0)" ng-click="getReviews()">Show Reviews</a>
+                      <a class="btn-grey" href="javascript:void(0)" ng-click="getReviews('{{item.id}}')" data-id="{{item.id}}">Show Reviews</a>
                       <div class="hotel-price">
                           {{item.price}} &euro;
                           <span class="date">
@@ -49,7 +49,7 @@
                       </div>
                   </div>
                   <div class="clear"></div>
-                  <div class="hotel-review" ng-repeat="item in reviews track by $index">
+                  <div class="hotel-review" id="" ng-repeat="item in reviews track by $index">
                   <div class="review clearfix">
                      <div class="review-box">
                       <div class="review-mark">
@@ -75,7 +75,6 @@
     
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="jquery.js"></script>
     <script src="angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -84,7 +83,6 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
     <script src="scripts/app.js"></script>
     <!-- endbuild -->
   </body>
