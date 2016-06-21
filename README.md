@@ -1,4 +1,4 @@
-# This is a Hotel Test, first version.
+# This is a Hotel Test
 
 I tried to do everything in Angular.
 
