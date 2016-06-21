@@ -1,7 +1,7 @@
 $icon-font-path: '../fonts/';
 
 // bower:scss
-@import "_bootstrap.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,latin-ext);
 // endbower
 
@@ -49,7 +49,8 @@ border-radius: 5px;
         margin-bottom: 48px;
         max-width: 1626px;
         .hotel-image {
-	        width: 638px;
+	        max-width: 638px;
+            width: 100%;
             border-right: 1px solid #979797;
             float: left;
             background: #e5e5e5;
@@ -154,6 +155,39 @@ border-radius: 5px;
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1680px) {
+    .hotels {
+        .hotel {
+            .hotel-image {
+                height: 480px;
+                width: 40%;
+                max-width: none;
+                img {
+                }
+            } 
+            .hotel-description {
+                width: 60%;
+            }
+        }
+    } 
+        
+}
 
+@media screen and (max-width: 1680px) {
+    .hotels {
+        .hotel {
+            .hotel-image {
+                height: 480px;
+                width: 100%;
+                max-width: none;
+                img {
+                    margin: 0 auto;
+                }
+            } 
+            .hotel-description {
+                width: 100%;
+            }
+        }
+    } 
+        
 }
